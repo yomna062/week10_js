@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font Pacifico -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font PT Sans Caption -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Bree Serif -->
+
+    <!-- ============= Font Awesome ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container p-5 text-center">
+        <div class="title">
+          <h1 class="display-4 my-5">Bookmarker</h1>
+        </div>
+        <!-- <span class="w-100">...</span> -->
+        <div class="forminput py-5">
+          <h2 class="mx-auto">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="input-box py-2">
+            <label for="siteName" class="d-block py-2 fw-semibold">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <span class="ms-2">Site Name</span></label
+            >
+            <input
+              type="text"
+              placeholder="Bookmark Name"
+              id="siteName"
+              class="form-control "
+              oninput="validateName(this)"
+            />
+          </div>
+          <div class="input-box py-2">
+            <label for="siteUrl" class="d-block py-2 fw-semibold">
+              <i class="fa-solid fa-paperclip"></i
+              ><span class="ms-2">Site URL</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Website URL"
+              id="siteUrl"
+              class="form-control "
+              oninput="validateUrl(this)"
+            />
+          </div>
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn-submit btn px-5 py-1 mt-4 fw-medium fs-5"
+            data-bs-target="#exampleModalToggle"
+            data-bs-toggle="modal"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <table class="table table-light text-center">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <div id="readMsg">
+      <!-- <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <div class="modal-title fs-5" id="exampleModalToggleLabel">
+              <div class="circle d-flex">
+                <span class="rounded-circle me-2 bg-orange"></span>
+                <span class="rounded-circle me-2 bg-yellow"></span>
+                <span class="rounded-circle me-2 bg-green"></span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="m-0 pb-2 fw-semibolder fs-5">
+              Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ul class="rules list-unstyled m-0">
+              <li>
+                <i class="fa-regular fa-circle-right p-3 "></i>Site name must
+                contain at least 3 characters
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-right p-3 "></i>Site URL must be
+                a valid one
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    </div>
+        
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
